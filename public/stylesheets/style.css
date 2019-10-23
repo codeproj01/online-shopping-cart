@@ -1,0 +1,56 @@
+body {
+   
+    background: url("./images/backdrop.jpg") repeat center fixed; 
+    
+}
+
+.thumbnail img {
+    max-height: 150px;
+}
+
+.thumbnail .description {
+    color: #7f7f7f;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.continueBtn {
+    margin-left: '10px'
+}
+Header {
+    font-weight: bold;
+    font-size: 20px;
+    /* background-color: beige; */
+}
+.Jumbotron {
+    color: khaki;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;  
+}
+
+#success {
+    text-align: center;
+    font-size: 40px;
+}
+/*
+.navbar {
+    background-color: whitesmoke; 
+    color: white; 
+} */
+
+/*
+.nav.navbar-nav.navbar-right .fa   {
+    color:white;
+}
+
+.navbar-header .navbar-brand {
+    color:white;  
+} */
