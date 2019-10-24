@@ -102,7 +102,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
             paymentId: charge.id
         });
         order.save(function(err, result) {
-            req.flash('success', 'Successfully bought product!');
+            req.flash('success', 'You Successfully bought a product!');
             req.session.cart = null;
             res.redirect('/');
         });

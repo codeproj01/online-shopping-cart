@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 
 //mongoose.connect('connect to your db');
 
+//To seed data to mongodb in heroku uncomment line below. Then comment out mongoose.connect string.
+//mongoose.connect('mongodb://heroku_v0rxbczw:tdi0f97gqgmn7plo119jtr5ash@ds133221.mlab.com:33221/heroku_v0rxbczw', {
 mongoose.connect('mongodb://localhost:27017/mongoShopping', {
     useNewUrlParser: true
 });
