@@ -73,6 +73,40 @@ router.get('/checkout', isLoggedIn, function(req, res, next) {
         noError: !errMsg
     });
 });
+router.post('/checkout', isLoggedIn, function(req, res, next) {
+    if (!req.session.cart) {
+        return res.redirect('/shopping-cart');
+    }
+    let cart = new Cart(req.session.cart);
+
+    let stripe = require("stripe")(
+        "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
+    );
+
+    stripe.charges.create({
+        amount: cart.totalPrice * 100,
+        currency: "usd",
+        source: "tok_mastercard", 
+        description: "Test charge"
+    }, function(err, charge) {
+        if (err) {
+            req.flash('error', err.message);
+            return res.redirect('/checkout');
+        }
+        let order = new Order({
+            user: req.user,
+            cart: cart,
+            address: req.body.address,
+            name: req.body.name,
+            paymentId: charge.id
+        });
+        order.save(function(err, result) {
+            req.flash('success', 'Successfully bought product!');
+            req.session.cart = null;
+            res.redirect('/');
+        });
+    });
+});
 
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
