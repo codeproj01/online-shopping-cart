@@ -3,18 +3,19 @@ const router = express.Router();
 const Cart = require('../models/cart');
 const Product = require('../models/product');
 const Order = require('../models/order');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     let successMsg = req.flash('success')[0];
     Product.find(function(err, docs) {
-        let productChunks = [];
-        let chunkSize = 3;
-        for (let i = 0; i < docs.length; i += chunkSize) {
-            productChunks.push(docs.slice(i, i + chunkSize));
+        let productLoads = [];
+        let loadSize = 3;
+        for (let i = 0; i < docs.length; i += loadSize) {
+            productLoads.push(docs.slice(i, i + loadSize));
         }
         res.render('shop/index', {
             title: 'Shopping Cart',
-            products: productChunks,
+            products: productLoads,
             successMsg: successMsg,
             noMessages: !successMsg
         });

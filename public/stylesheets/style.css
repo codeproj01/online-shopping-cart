@@ -50,12 +50,7 @@ img {
     width: 70%;
   } */
   
-  .ClassDiv> div {
-    flex-basis: 25%;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-  }
+  
   
    img {
     width: 55%;
@@ -67,11 +62,7 @@ img {
     justify-content: center;
     align-items: center;
     transform: scale(1);
-  }
-  .ClassDiv > div:hover {
-    transform: scale(1.30);
-    
-  }
+
 /*
 .navbar {
     background-color: whitesmoke; 
