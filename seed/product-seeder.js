@@ -1,5 +1,6 @@
 const Product = require('../models/product');
 const mongoose = require('mongoose');
+
 //mongoose.connect('connect to your db');
 
 mongoose.connect('mongodb://localhost:27017/mongoShopping', {

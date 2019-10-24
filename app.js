@@ -11,10 +11,10 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const validator = require('express-validator');
 const MongoStore = require('connect-mongo')(session);
-//mongoose.connect('connect to your db');
 const routes = require('./routes/index');
 const userRoutes = require('./routes/user');
 const app = express();
+
 require('./config/passport');
 // view engine setup
 app.engine('.hbs', expressHbs({
