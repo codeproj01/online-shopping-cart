@@ -41,17 +41,7 @@ Header {
     text-align: center;
     font-size: 40px;
 }
-/*
-img {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 70%;
-  } */
-  
-  
-  
+
    img {
     width: 55%;
     height: 100%;
@@ -63,17 +53,4 @@ img {
     align-items: center;
     transform: scale(1);
 
-/*
-.navbar {
-    background-color: whitesmoke; 
-    color: white; 
-} */
-
-/*
-.nav.navbar-nav.navbar-right .fa   {
-    color:white;
-}
-
-.navbar-header .navbar-brand {
-    color:white;  
-} */
+   }
