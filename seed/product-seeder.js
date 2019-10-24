@@ -10,38 +10,38 @@ const Schema = mongoose.Schema;
 
 const products = [
     new Product({
-        imagePath: './node.js-shopping-cart/views/images/jordans1/jpg',
-        title: 'Air Jordan 21 Retro CDP',
+        imagePath: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Nike_Air_Jordan_XVII.jpg',
+        title: 'Nike Air Jordan XVII',
         description: '322,717-061 black/varsity red Air Jordans',
         price: 110
     }),
     new Product({
-        imagePath: '../jordan2.jpg',
-        title: 'Nike Air Jordan 7 Retro ',
+        imagePath: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Air_Jordan_XX1.jpg',
+        title: 'Air Jordan 21 Retro & OG',
         description: 'Pure Money White/Metallic Silver Shoes 304775-120',
         price: 120
     }),
     new Product({
-        imagePath: './images/jordan3.jpg',
-        title: 'Air Jordan 13',
+        imagePath: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Nike_Air_Jordan_XIV.jpg',
+        title: 'Jordan 14 Retro Black Toe',
         description: 'Atmosphere Grey colorway. ',
         price: 160
     }),
     new Product({
-        imagePath: './images/jordan4.jpg',
-        title: 'Air Jordan Retro 1 ',
-        description: 'BMP yellow black aka,jordan space jams ',
+        imagePath: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Nike_Air_Jordan_X_Steel.jpg',
+        title: 'The Steel Air Jordan 10',
+        description: 'The OG Colorway',
         price: 115
     }),
     new Product({
-        imagePath: './images/jordan5.jpg',
-        title: 'Nike Air Jordan 21 ',
+        imagePath: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Jordan_II.jpg',
+        title: 'Air Jordan 2 Retro & OG',
         description: 'Son Of Mars Schuhe BlackGreyRed',
         price: 170
     }),
     new Product({
-        imagePath: './images/jordan6.jpg',
-        title: 'Air Jordan Retro 14 SE ',
+        imagePath: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Nike_Air_Jordan_IX.jpg',
+        title: 'Jordan 9 Retro OG',
         description: 'Yellow Reverse Ferrari University Gold',
         price: 170
     })

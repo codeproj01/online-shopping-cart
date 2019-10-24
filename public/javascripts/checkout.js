@@ -1,6 +1,6 @@
 Stripe.setPublishableKey('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
-var $form = $('#checkout-form');
+let $form = $('#checkout-form');
 $form.submit(function(event) {
     $('#charge-error').addClass('hidden');
     $form.find('button').prop('disabled', true);
@@ -20,7 +20,7 @@ function stripeResponseHandler(status, response) {
         $('#charge-error').removeClass('hidden');
         $form.find('button').prop('disabled', false);
     } else {
-        var token = response.id;
+        let token = response.id;
         $form.append($('<input type="hidden" name="stripeToken"/>').val(token));
         $form.get(0).submit();
     }

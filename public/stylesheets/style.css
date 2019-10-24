@@ -1,6 +1,6 @@
 body {
    
-    background: url("./images/backdrop.jpg") repeat center fixed; 
+    background-image: url("./images/backdrop.jpg") repeat center fixed; 
     
 }
 
@@ -40,6 +40,37 @@ Header {
     text-align: center;
     font-size: 40px;
 }
+/*
+img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 70%;
+  } */
+  
+  .ClassDiv> div {
+    flex-basis: 25%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   img {
+    width: 55%;
+    height: 100%;
+    margin: 2px ;
+    border: 5px solid lightseagreen;
+
+    transform: scale(1);
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .ClassDiv > div:hover {
+    transform: scale(1.30);
+    
+  }
 /*
 .navbar {
     background-color: whitesmoke; 
