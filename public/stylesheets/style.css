@@ -51,5 +51,8 @@ Header {
     justify-content: center;
     align-items: center;
     transform: scale(1);
-
    }
+
+#app {
+    padding: 30px 0;
+  }

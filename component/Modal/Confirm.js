@@ -1,4 +1,8 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/lib/Button';
+import Modal from 'react-bootstrap/lib/Modal';
+import React from "./node_modules/react";
 import Modal  from "./Modal";
 
 var Confirm = React.createClass({
