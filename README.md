@@ -9,5 +9,5 @@ Built with the following Technologies.
 ### Express
 ### Passport
 ### bcrypt
-### React - Incomplete
+### React 
 ### stripe
