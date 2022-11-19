@@ -36,7 +36,7 @@
     "stripe": "^5.4.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.12"
   },
   "description": "It is a  complete shopping cart \r To run this:\r $ npm install\r $ npm start\r You can also see this project live on:https://nodejsshopping-cart.herokuapp.com/",
   "main": "app.js",
